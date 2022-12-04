@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Larusso - Cadastro</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <div class="div_align_center">
+        <h1 id="topo_guia" class="titulo_pagina">CADASTRO</h1>
+    </div>
+
+
+    <form class="cadastro-form ">
+        <div class="frm_lg">
+            <h2 class="form_sub_formate">
+                PESSOAL
+            </h2>
+
+            <div class="cadastro-grid">
+                <h3>
+                    <label>Nome:</label>
+                    <input class="placeholder" type="text" name="nome" placeholder="Nome completo" />
+                </h3>
+                <h3>
+                    <label>CPF:</label>
+                    <input class="placeholder" type="text" name="cpf" placeholder="Apenas números" maxlength="11" />
+                </h3>
+                <h3>
+                    <label>Sexo:</label>
+                    <select name="uf">
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option disabled selected>Selecione</option>
+                </select>
+                </h3>
+            </div>
+            <div class="cadastro-grid">
+                <h3>
+                    <label>E-mail:</label>
+                    <input class="placeholder" type="email" name="email" placeholder="Seu melhor e-mail" />
+                </h3>
+                <h3>
+                    <label>Usuário:</label>
+                    <input class="placeholder" type="text" name="login" placeholder="Ex: gertrudes007" />
+                </h3>
+                <h3>
+                    <label>Senha:</label>
+                    <input class="placeholder" type="password" name="senha" placeholder="Até 8 caracteres" maxlength="8" />
+                </h3>
+            </div>
+
+            <h2 class="form_sub_formate">
+                ENDEREÇO
+            </h2>
+            <div class="cadastro-grid">
+                <h3>
+                    <label>UF:</label>
+                    <select name="uf">
+                        <option>ES</option>
+                        <option>MG</option>
+                        <option>RJ</option>
+                        <option>SP</option>
+                        <option disabled selected>Selecione</option>
+                    </select>
+                </h3>
+
+                <h3>
+                    <label>Cidade:</label>
+                    <input class="placeholder" type="text" name="cidade" placeholder="Cidade" />
+                </h3>
+
+                <h3>
+                    <label>Bairro:</label>
+                    <input class="placeholder" type="text" name="bairro" placeholder="Bairro" />
+                </h3>
+            </div>
+            <div class="cadastro-grid">
+                <h3>
+                    <label>Rua:</label>
+                    <input class="placeholder" type="text" name="rua" placeholder="Rua" />
+                </h3>
+
+                <h3>
+                    <label>Número:</label>
+                    <input class="placeholder" type="text" name="numero" placeholder="Número" />
+                </h3>
+
+                <h3>
+                    <label>Complemento:</label>
+                    <input class="placeholder" type="text" name="complemento" placeholder="EX: Casa..." />
+                </h3>
+            </div>
+
+            <h2 class="form_sub_formate">
+                SOBRE VOCÊ
+            </h2>
+
+            <div class="texto-protegido">
+                <div class="subtitulo_cadastro">
+                    <h2>
+                        <label>Selecione os carros de sua preferência:</label><br />
+                    </h2>
+                </div>
+                <div class="cadastro-grid-checkbox">
+                    <h3>
+                        <input id="hatch" type="checkbox" name="carro-hatch" value="Hatch" />
+                        <label for="hatch">Hatch</label>
+                    </h3>
+                    <h3>
+                        <input id="sedan" type="checkbox" name="carro-sedan" value="Sedan" />
+                        <label for="sedan">Sedan</label>
+                    </h3>
+                    <h3>
+                        <input id="suv" type="checkbox" name="carro-suv" value="SUV" />
+                        <label for="suv">SUV</label>
+                    </h3>
+                    <h3>
+                        <input id="crossover" type="checkbox" name="carro-crossover" value="Crossover" />
+                        <label for="crossover">Crossover</label>
+                    </h3>
+
+                    <h3>
+                        <input id="minivan" type="checkbox" name="carro-minivan" value="Minivan" />
+                        <label for="minivan">Minivan</label>
+                    </h3>
+                </div>
+                <div class="cadastro-grid-checkbox">
+                    <h3>
+                        <input id="picape" type="checkbox" name="carro-picape" value="Picape" />
+                        <label for="picape">Picape</label>
+                    </h3>
+                    <h3>
+                        <input id="wagon" type="checkbox" name="carro-wagon" value="Wagon" />
+                        <label for="wagon">Wagon</label>
+                    </h3>
+                    <h3>
+                        <input id="diesel" type="checkbox" name="carro-diesel" value="Diesel" />
+                        <label for="diesel">Diesel</label>
+                    </h3>
+
+                    <h3>
+                        <input id="elétrico" type="checkbox" name="carro-elétrico" value="Elétrico" />
+                        <label for="elétrico">Elétrico</label>
+                    </h3>
+
+                    <h3>
+                        <input id="híbrido" type="checkbox" name="carro-híbrido" value="Híbrido" />
+                        <label for="híbrido">Híbrido</label>
+                    </h3>
+                </div>
+                <div class="cadastro-grid-checkbox">
+                    <h3>
+                        <input id="conversível" type="checkbox" name="carro-conversível" value="Conversível" />
+                        <label for="conversível">Conversível</label>
+                    </h3>
+
+                    <h3>
+                        <input id="cupê" type="checkbox" name="carro-cupê" value="Cupê" />
+                        <label for="cupê">Cupê</label>
+                    </h3>
+                    <h3>
+                        <input id="muscle_car" type="checkbox" name="carro-muscle" value="Muscle Car" />
+                        <label for="muscle_car">Muscle Car</label>
+                    </h3>
+                    <h3>
+                        <input id="luxo" type="checkbox" name="carro-luxo" value="Luxo" />
+                        <label for="luxo">Luxo</label>
+                    </h3>
+                </div>
+                <div class="subtitulo_cadastro">
+                    <h3>
+
+                        Não sabe quais carros selecionar? Clique <a href="guia_carros.html" target="_blank">aqui</a> e confira nosso guia sobre tipos de carros!
+                    </h3>
+
+                    <h2>
+                        <label>Qual cor de carro devemos recomendar?</label>
+                    </h2>
+
+                </div>
+
+                <h3>
+                    <div class="div_radio">
+                        <input id="preto" type="radio" name="corCarro" value="Preto" />
+                        <label for="preto">Preto</label>
+                    </div>
+
+                    <div class="div_radio">
+                        <input id="branco" type="radio" name="corCarro" value="Branco" />
+                        <label for="branco">Branco</label>
+                    </div>
+
+                    <div class="div_radio">
+                        <input id="prata" type="radio" name="corCarro" value="Prata" />
+                        <label for="prata">Prata</label>
+                    </div class="div_radio">
+
+                    <div class="div_radio">
+                        <input id="colorido" type="radio" name="corCarro" value="Colorido" />
+                        <label for="colorido">Colorido</label>
+                    </div>
+
+                </h3>
+            </div>
+            <div class="cadastro_ta">
+                <h3>
+                    <label>Biografia:</label>
+                    <textarea class="placeholder" id="biografia" name="comentario" placeholder="Digite algo sobre você..."></textarea>
+                </h3>
+            </div>
+
+            <div class="login_btn">
+                <input class="limpar_btn" type="reset" />
+                <input class="cadastrar_btn" type="button" value="Cadastrar" />
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
